@@ -1,11 +1,14 @@
 package aggregators;
 
+import fileprocessors.StockFileReader;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MaxAggregator extends Aggregator{
-	
-	public MaxAggregator(List<Double> numbers) {
+
+	public MaxAggregator() {
 		this.numbers = new ArrayList<Double>();
 	}
 
@@ -22,7 +25,7 @@ public class MaxAggregator extends Aggregator{
 
 	@Override
 	public List<Double> getValues() {
-		return numbers;
+        return numbers;
 	}
 	
 }
